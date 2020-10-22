@@ -168,9 +168,9 @@ sns.barplot(y=ct.get_feature_names(), x=clf.coef_[0])
 
 
 #%%Check accuracy in NB
-x_ax = range(len(y_test))
-plt.scatter (x_ax, y_test, s=100, color="blue", label="original")
-plt.plot(x_ax, pred_test, lw=500, color="red", label="predicted")
+x_nb = range(len(y_test))
+plt.scatter (x_nb, y_test, s=100, color="blue", label="original")
+plt.plot(x_nb, pred_test, lw=500, color="red", label="predicted")
 plt.legend()
 plt.show()
 
